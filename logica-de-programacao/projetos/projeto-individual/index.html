@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css" media="screen"/>
+  <title>Projeto Individual</title>
+</head>
+<body>
+  <div class="container">
+    <form onsubmit="formSubmit(event)">
+        <div>
+          <label for="email">E-mail:</label>
+          <input type="email" id="email" name="email">
+          <input type="submit" value="Enviar">
+        </div>
+        <div>
+          <p>Você aceitar receber comunicações de marketing?</p>
+          <input required type="radio" id="marketing_yes" name="marketing" value="yes">
+          <label for="marketing_yes">Sim</label><br>
+          <input required type="radio" id="marketing_no" name="marketing" value="no">
+          <label for="marketing_no">Não</label><br>
+        </div>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
